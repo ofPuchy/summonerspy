@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>Summoner Spy</title>
+
+        <!-- Bootstrap core CSS -->
+        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Custom fonts for this template -->
+        <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+        <link href='https://fonts.googleapis.com/css?family=Cabin:700' rel='stylesheet' type='text/css'>
+
+        <!-- Custom styles for this template -->
+        <link href="css/grayscale.min.css" rel="stylesheet">
+
+    </head>
+
+    <body id="page-top">
+
+        <!-- Navigation -->
+        
+
+        <!-- Intro Header -->
+        
+        <!-- About Section -->
+        <script type="text/javascript">
+$(document).ready(function() {
+// Tooltip only Text
+$('.masterTooltip').hover(function(){
+        // Hover over code
+        var title = $(this).attr('title');
+        $(this).data('tipText', title).removeAttr('title');
+        $('<p class="tooltip"></p>')
+        .text(title)
+        .appendTo('body')
+        .fadeIn('slow');
+}, function() {
+        // Hover out code
+        $(this).attr('title', $(this).data('tipText'));
+        $('.tooltip').remove();
+}).mousemove(function(e) {
+        var mousex = e.pageX + 20; //Get X coordinates
+        var mousey = e.pageY + 10; //Get Y coordinates
+        $('.tooltip')
+        .css({ top: mousey, left: mousex })
+});
+});
+</script>
+<header>
+            <div class="container text-center">
+                <br><br>
+                <h1>Summoner Spy</h1><br>
+            </div>
+        </header>
+        <!-- Download Section -->
+        <section id="download" class="download-section content-section text-center">
+            <div class="container">
+                <div class="col-lg-8 mx-auto">
+                    <h1 style="text-height:16px">   </h1>
+                    <h2>get started</h2>
+                    
+                   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+                    <h5>Enter summoner name to conduct research on <br>league of legends player</h5>
+                    <form role="form" id="contactForm" data-toggle="validator" action="lookup1.php">
+                        <input type="text" name="search" placeholder="Search.." style="padding:10px">
+                        <button type="submit" id="form-submit" class="btn btn-success btn-lg">Look up Summoner</button>
+                       
+                    </form>
+                     
+                        <br><p title="hoi" class="masterTooltip">Search only applies on EUW server.</p>
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        
+
+        
+
+        <!-- Footer -->
+        <footer>
+            <div class="container text-center">
+                <p>Copyright &copy; Simon Bundi</p>
+            </div>
+        </footer>
+
+        <!-- Bootstrap core JavaScript -->
+        <script src="vendor/jquery/jquery.min.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+        <!-- Plugin JavaScript -->
+        <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+        <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
+
+        <!-- Custom scripts for this template -->
+        <script src="js/grayscale.min.js"></script>
+
+    </body>
+
+</html>
